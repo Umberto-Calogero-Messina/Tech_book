@@ -1,0 +1,22 @@
+.read {
+  &__title {
+    font-family: 'Martian Mono', serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -2px;
+
+    margin-bottom: 24px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 14px;
+    margin-block: 16px;
+  }
+
+  &__together {
+    border-radius: 16px;
+    margin-bottom: 64px;
+  }
+}

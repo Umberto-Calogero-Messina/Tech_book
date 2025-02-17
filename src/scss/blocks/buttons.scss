@@ -1,0 +1,40 @@
+.button {
+  font-family: 'Martian Mono', serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--color-light-salmon);
+  border: 2px solid black;
+  border-radius: 8px;
+  &-review {
+    width: 343px;
+    height: 64px;
+    padding: 21px 22px;
+
+    margin-bottom: 20px;
+  }
+
+  &-membership {
+    width: 292px;
+    height: 61px;
+    padding: 20px 77px;
+
+    margin-bottom: 20px;
+  }
+
+  &-footer {
+    margin-inline: auto;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 24px;
+
+    padding: 20px;
+  }
+}

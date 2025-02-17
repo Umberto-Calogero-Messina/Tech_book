@@ -1,0 +1,36 @@
+@use '../mixins/pseudo.scss' as *;
+
+.reading {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../../assets/images/pattern-light-bg.svg);
+  padding: 64px 16px;
+
+  margin-bottom: 64px;
+
+  &:after {
+    @include pseudo(600px, 600px) {
+      background-image: url(../assets/images/pattern-glow.svg);
+      bottom: 0;
+    }
+  }
+
+  &__box {
+    &-box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+}

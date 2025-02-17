@@ -3,12 +3,283 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet">
+
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
+
+    <header class="header">
+      <img class="header__img" src="./assets/images/logo.svg" alt>
+      <h1 class="text-h1">Join the ultimate tech book club</h1>
+      <p class="text-p">Turn your reading time into learning time with fellow
+        tech enthusiasts.
+        Get curated recommendations, join vibrant discussions, and level up your
+        skills one chapter at a time.</p>
+      <button class="button button-review">REVIEW MEMBERSHIP OPTION <img
+          class="review__img"
+          src="./assets/images/icon-arrow-down.svg" alt></button>
+
+      <div class="header__star">
+        <img class="header__star--img" src="./assets/images/image-avatars.webp"
+          alt>
+        <div class="header__star--developers">
+          <div class="header__star-iconbox">
+            <img class="header__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="header__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="header__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="header__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="header__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+          </div>
+
+          <span>200+ developers joined already</span>
+        </div>
+      </div>
+
+      <div class="header__picture">
+        <picture>
+          <source srcset="./assets/images/image-hero-tablet.webp"
+            media="(min-width: 780px)" />
+          <source srcset="./assets/images/image-hero-desktop.webp"
+            media="(min-width: 1440px)" />
+          <img src="./assets/images/image-hero-mobile.webp" alt="MDN" />
+        </picture>
+      </div>
+
+    </header>
+
+    <main class="main">
+      <div class="read">
+        <h2 class="read__title">Read together,
+          grow together</h2>
+        <div class="read__box">
+          <img class="read__img" src="./assets/images/icon-check.svg" alt>
+          <span class="read__span text-p">Monthly curated tech reads selected by
+            industry experts</span>
+        </div>
+        <div class="read__box">
+          <img class="read__img" src="./assets/images/icon-check.svg" alt>
+          <span class="read__span text-p">Monthly curated tech reads selected by
+            industry experts</span>
+        </div>
+        <div class="read__box">
+          <img class="read__img" src="./assets/images/icon-check.svg" alt>
+          <span class="read__span text-p">Monthly curated tech reads selected by
+            industry experts</span>
+        </div>
+        <div class="read__box">
+          <img class="read__img" src="./assets/images/icon-check.svg" alt>
+          <span class="read__span text-p">Monthly curated tech reads selected by
+            industry experts</span>
+        </div>
+      </div>
+
+      <picture>
+        <source srcset="./assets/images/image-read-together-tablet.webp"
+          media="(min-width: 780px)" />
+        <source srcset="./assets/images/image-read-together-desktop.webp"
+          media="(min-width: 1440px)" />
+        <img class="read__together"
+          src="./assets/images/image-read-together-mobile.webp"
+          alt="MDN" />
+      </picture>
+
+      <div class="book">
+        <img class="book__img" src="./assets/images/pattern-circle.png" alt>
+        <h2 class="text-h2">Not your average book club</h2>
+        <div class="book__text">
+
+          <span class=" text-p">Connect with a community that speaks
+            your
+            language
+            - from Python
+            to TypeScript and everything in between. Our discussions blend
+            technical depth with practical applications.</span>
+        </div>
+
+        <picture>
+          <source srcset="./assets/images/image-not-average-tablet.webp"
+            media="(min-width: 780px)" />
+          <source srcset="./assets/images/image-not-average-desktop.webp"
+            media="(min-width: 1440px)" />
+          <img class="read__together"
+            src="./assets/images/image-not-average-mobile.webp"
+            alt="MDN" />
+        </picture>
+      </div>
+
+      <div class="reading">
+        <h2 class="text-h2">Your tech reading journey</h2>
+
+        <div class="reagind__box">
+          <div class="reading__box-box">
+            <span class="reading__number text-number">1</span>
+            <span class=" text-number">Choose your membership tier</span>
+          </div>
+          <div class="reading__box-box">
+            <span class="reading__number text-number">2</span>
+            <span class=" text-number">Get your monthly book selection</span>
+          </div>
+          <div class="reading__box-box">
+            <span class="reading__number text-number">3</span>
+            <span class=" text-number">Join our discussion forums</span>
+          </div>
+          <div class="reading__box-box">
+            <span class="reading__number text-number">4</span>
+            <span class=" text-number">Attend exclusive meetups</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="membership__titl text-h2">Membership options</h2>
+      <div class="membership">
+
+        <div class="membership__card">
+          <h3 class="membership__card-title text-h3">Starter</h3>
+          <div class="membership__card-box">
+            <div class="membership__price">
+              <span class="membership__card-price text-h2">$19 </span>
+              <span
+                class="membership__card-month text-p">/month
+              </span>
+            </div>
+
+            <div class="membership__card-sub">
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>1 book/month</span>
+              </div>
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>Online forums</span>
+              </div>
+
+            </div>
+            <button class="button button-membership">SUBSCRIBE NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="membership">
+
+        <div class="membership__card membership__card-pro">
+          <h3 class="membership__card-title text-h3">Pro</h3>
+          <div class="membership__card-box">
+            <div class="membership__price">
+              <span class="membership__card-price text-h2">$29 </span>
+              <span
+                class="membership__card-month text-p">/month
+              </span>
+            </div>
+
+            <div class="membership__card-sub">
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>2 book/month</span>
+              </div>
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>Virtual meetups</span>
+              </div>
+
+            </div>
+            <button class="button button-membership">SUBSCRIBE NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="membership membership-last">
+
+        <div class="membership__card">
+          <h3 class="membership__card-title text-h3">Enterprise</h3>
+          <div class="membership__card-box">
+            <div class="membership__price membership__price-custom">
+              <h3 class="membership__card-title text-h2">Custom</h3>
+            </div>
+
+            <div class="membership__card-sub">
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>1 book/month</span>
+              </div>
+              <div class="membership__card-subscription">
+                <img src="./assets/images/icon-check.svg" alt>
+                <span>Online forums</span>
+              </div>
+
+            </div>
+            <button class="button button-membership">SUBSCRIBE NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="membership__star">
+        <img src="./assets/images/icon-star.svg" alt>
+        <img src="./assets/images/icon-star.svg" alt>
+        <img src="./assets/images/icon-star.svg" alt>
+        <img src="./assets/images/icon-star.svg" alt>
+        <img src="./assets/images/icon-star.svg" alt>
+      </div>
+
+      <div class="membership__comments">
+        <h3
+          class="text-h3">"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussions are gold!"</h3>
+        <p class="text-p">Sarah Chen, Software Architect</p>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <h2 class=" footer__title text-h2">Ready to debug your reading list?</h2>
+
+      <button class="button button-footer">REVIEW MEMBERSHIP OPTION <img
+          class="footer__img"
+          src="./assets/images/icon-arrow-up.svg" alt></button>
+
+      <div class="footer__star">
+        <img class="footer__star--img" src="./assets/images/image-avatars.webp"
+          alt>
+        <div class="footer__star--developers">
+          <div class="footer__star-iconbox">
+            <img class="footer__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="footer__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="footer__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="footer__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+            <img class="footer__star--icon" src="./assets/images/icon-star.svg"
+              alt>
+          </div>
+
+          <span>200+ developers joined already</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer__copyright text-h4">© 2024 – Tech Book Club</h4>
+        <div class="footer__social">
+          <img src="./assets/images/logo-bluesky.svg" alt>
+          <img src="./assets/images/logo-linkedin.svg" alt>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

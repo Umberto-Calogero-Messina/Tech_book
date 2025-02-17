@@ -1,1 +1,50 @@
+.text {
+  &-h1 {
+    font-family: 'Martian Mono', serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
 
+  &-h2 {
+    font-family: 'Martian Mono', serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -2px;
+  }
+
+  &-h3 {
+    font-family: 'Martian Mono', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+  }
+
+  &-p {
+    font-family: 'Inter', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #385159;
+  }
+
+  &-h4 {
+    font-family: 'Martian Mono', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+  }
+
+  &-number {
+    font-family: 'Martian Mono', serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+}

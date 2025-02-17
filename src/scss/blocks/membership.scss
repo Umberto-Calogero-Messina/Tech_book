@@ -1,0 +1,70 @@
+@use '../mixins/pseudo.scss' as *;
+
+.membership {
+  margin-bottom: 24px;
+
+  &-last {
+    margin-bottom: 64px;
+  }
+
+  &__pro {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    &-custom {
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e1df;
+
+    &-custom {
+      padding-bottom: 0;
+    }
+  }
+
+  &__card {
+    padding: 24px;
+    border: 1px solid #e6e1df;
+    border-radius: 8px;
+    position: relative;
+
+    overflow: hidden;
+
+    &-pro {
+      background-color: #faf5f3;
+      &::after {
+        @include pseudo(600px, 600px) {
+          background-image: url(../assets/images/pattern-glow.svg);
+          bottom: 0;
+        }
+      }
+    }
+
+    &-sub {
+      margin-bottom: 32px;
+    }
+
+    &-subscription {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__star {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__comments {
+    margin-bottom: 64px;
+  }
+}

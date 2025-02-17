@@ -1,4 +1,13 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
+@use 'blocks/texts.scss';
+@use 'blocks/buttons.scss';
 @use 'blocks/body.scss';
+@use 'blocks/header.scss';
+@use 'blocks/main.scss';
+@use 'blocks/read.scss';
+@use 'blocks/book.scss';
+@use 'blocks/reading.scss';
+@use 'blocks/membership.scss';
+@use 'blocks/footer.scss';
