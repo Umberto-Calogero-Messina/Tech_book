@@ -11,19 +11,31 @@
 
   &__title {
     width: 330px;
+    margin-inline: auto;
+    text-align: center;
     @include responsive(tablet) {
       width: 100%;
     }
     @include responsive(desktop) {
-      text-align: center;
       margin-bottom: 64px;
     }
   }
 
   &__flex {
     @include responsive(tablet) {
-      display: flex;
+      max-width: 500px;
+      margin-inline: auto;
+
+      gap: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
+      justify-content: center;
+    }
+    @include responsive(desktop) {
+      max-width: 1000px;
+
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   &-last {
@@ -62,6 +74,10 @@
 
     &-pro {
       background-color: #faf5f3;
+      @include responsive(desktop) {
+        height: 450px;
+      }
+
       &::after {
         @include pseudo(600px, 600px) {
           background-image: url(../assets/images/pattern-glow.svg);
@@ -94,9 +110,11 @@
   &__comments {
     margin-bottom: 64px;
     &-title {
-      width: 700px;
-      text-align: center;
-      margin-inline: auto;
+      @include responsive(desktop) {
+        width: 700px;
+        text-align: center;
+        margin-inline: auto;
+      }
     }
     &-subtitle {
       text-align: center;
