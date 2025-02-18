@@ -1,4 +1,14 @@
+@use '../mixins/responsive.scss' as *;
+
 .read {
+  &__flex {
+    @include responsive(desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 80px;
+    }
+  }
   &__title {
     font-family: 'Martian Mono', serif;
     font-weight: 600;
@@ -7,12 +17,25 @@
     letter-spacing: -2px;
 
     margin-bottom: 24px;
+    @include responsive(tablet) {
+      width: 400px;
+    }
+    @include responsive(tablet) {
+      font-size: 50px;
+      width: 600px;
+    }
   }
 
   &__box {
     display: flex;
     gap: 14px;
     margin-block: 16px;
+    @include responsive(tablet) {
+      margin-block: 24px;
+    }
+    @include responsive(tablet) {
+      width: 400px;
+    }
   }
 
   &__together {

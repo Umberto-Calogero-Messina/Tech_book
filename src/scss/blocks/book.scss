@@ -1,15 +1,49 @@
+@use '../mixins/responsive.scss' as *;
+
 .book {
   position: relative;
   margin-bottom: 64px;
+  &__title {
+    width: 250px;
+    @include responsive(tablet) {
+      width: 600px;
+    }
+    @include responsive(desktop) {
+      width: 600px;
+    }
+  }
+
+  &__flex {
+    @include responsive(desktop) {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+    }
+  }
+
   &__img {
     width: 120px;
     position: absolute;
     top: 85px;
     left: -10px;
+
+    @include responsive(tablet) {
+      width: 180px;
+      top: 60px;
+      left: 150px;
+    }
+    @include responsive(desktop) {
+      width: 180px;
+      top: 100px;
+      left: 150px;
+    }
   }
 
   &__text {
     width: 323px;
     margin-bottom: 40px;
+    @include responsive(tablet) {
+      width: 100%;
+    }
   }
 }

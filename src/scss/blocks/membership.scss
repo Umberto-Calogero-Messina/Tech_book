@@ -1,8 +1,31 @@
 @use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
 
 .membership {
   margin-bottom: 24px;
+  width: 340px;
+  margin-inline: auto;
+  @include responsive(tablet) {
+    margin-inline: 0;
+  }
 
+  &__title {
+    width: 330px;
+    @include responsive(tablet) {
+      width: 100%;
+    }
+    @include responsive(desktop) {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__flex {
+    @include responsive(tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
   &-last {
     margin-bottom: 64px;
   }
@@ -62,9 +85,21 @@
   &__star {
     display: flex;
     gap: 6px;
+    @include responsive(desktop) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__comments {
     margin-bottom: 64px;
+    &-title {
+      width: 700px;
+      text-align: center;
+      margin-inline: auto;
+    }
+    &-subtitle {
+      text-align: center;
+    }
   }
 }

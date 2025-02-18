@@ -1,9 +1,23 @@
+@use '../mixins/responsive.scss' as *;
+
 .header {
   background-image: url(../../assets/images/pattern-light-bg.svg);
   padding-inline: 16px;
   padding-top: 24px;
+  @include responsive(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+
+  &__title {
+    @include responsive(tablet) {
+      width: 700px;
+    }
+  }
   &__img {
-    margin-bottom: 48px;
+    padding-inline: 16px;
+    padding-top: 24px;
   }
 
   &__star {

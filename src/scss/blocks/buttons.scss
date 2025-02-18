@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .button {
   font-family: 'Martian Mono', serif;
   font-weight: 600;
@@ -12,10 +14,19 @@
   background-color: var(--color-light-salmon);
   border: 2px solid black;
   border-radius: 8px;
+
+  @include responsive(tablet) {
+    font-size: 18px;
+  }
+
   &-review {
     width: 343px;
     height: 64px;
     padding: 21px 22px;
+
+    @include responsive(tablet) {
+      padding: 21px 18px;
+    }
 
     margin-bottom: 20px;
   }

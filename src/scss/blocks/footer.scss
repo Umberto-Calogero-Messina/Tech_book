@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .footer {
   background-color: #062630;
   text-align: center;
@@ -6,6 +8,15 @@
   &__title {
     margin-bottom: 40px;
     padding-top: 48px;
+
+    @include responsive(tablet) {
+      width: 400px;
+      margin-inline: auto;
+    }
+    @include responsive(desktop) {
+      width: 700px;
+      margin-inline: auto;
+    }
   }
 
   &__img {
@@ -18,8 +29,9 @@
     padding-bottom: 64px;
     padding-inline: 12px;
     margin-bottom: 24px;
+    width: 388px;
+    margin-inline: auto;
 
-    border-bottom: 1px solid white;
     &--img {
       width: 110px;
       height: 40px;
@@ -36,7 +48,16 @@
   }
 
   &__copyright {
-    margin-bottom: 16px;
+    border-top: 1px solid white;
+    @include responsive(desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-inline: 135px;
+    }
+    &-title {
+      margin-bottom: 16px;
+    }
   }
 
   &__social {
@@ -45,5 +66,8 @@
     justify-content: center;
     gap: 24px;
     padding-bottom: 24px;
+    @include responsive(desktop) {
+      padding-bottom: 0;
+    }
   }
 }
